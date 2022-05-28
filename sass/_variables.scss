@@ -1,0 +1,15 @@
+/*=============================
+=>          Colores          <=
+=============================*/
+$color-primario-1: #C2DED1;
+$color-complementario-1:complement($color-primario-1);
+$color-primario-2: #ECE5C7;
+$color-complementario-2:complement($color-primario-2);
+$color-primario-3: #CDC2AE;
+$color-complementario-3:invert($color-primario-2);
+$color-primario-4: #354259;
+$color-complementario-4:complement($color-primario-4);
+
+/*=============================
+=>          Sombras          <=
+=============================*/

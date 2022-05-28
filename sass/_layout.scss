@@ -1,0 +1,22 @@
+/*==============================
+=> Seteo de estilos iniciales <=
+==============================*/
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin:0;
+  padding:0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: $color-complementario-3;
+  box-sizing: border-box;
+  color: $color-primario-1;
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 400;
+}

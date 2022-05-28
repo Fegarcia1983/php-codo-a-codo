@@ -1,0 +1,14 @@
+{
+  "name": "php-codoacodo",
+  "version": "1.0.0",
+  "description": "Personal portfolio for PHP curse dicted by Codo a Codo",
+  "main": "index.js",
+  "scripts": {
+    "comp:sass": "node-sass ./sass/main.scss ./css/styles.css -w"
+  },
+  "author": "Federico Garcia",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
