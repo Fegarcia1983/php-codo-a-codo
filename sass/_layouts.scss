@@ -1,0 +1,25 @@
+/*=============================
+=>          Main TAG         <=
+=============================*/
+main {
+  border-radius: $border-normal;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  width: 1440px;
+}
+
+/*=============================
+=>          Nav Bar          <=
+=============================*/
+nav {
+  height: 100vh;
+}
+
+/*=============================
+=>       Main Container      <=
+=============================*/
+.main-content {
+  position: relative;
+  width: 100%;
+}

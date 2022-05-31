@@ -1,0 +1,133 @@
+/*=============================
+=>           Header          <=
+=============================*/
+.header {
+  &_main {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto auto;
+    width: 80%;
+    &::before{
+      content: "";
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top:0;
+      width: 100%;
+      z-index: -1;
+      @include glass($color-primario-1);
+    }
+    &--start{
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      padding: 0.75rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin: 1rem 0 0 1rem;
+      width: 100%;
+      animation: headerMain .5s;
+      &::before{
+        content: "";
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top:0;
+        width: 100%;
+        z-index: -1;
+        @include glass($color-primario-1);
+      }
+    }
+  }
+  &_img {
+    border-radius: 50%;
+    height: 10rem;
+    margin-right: 3rem;
+    margin-left: 0;
+    width: 10rem;
+    &--start{
+      border-radius: 50%;
+      height: 5rem;
+      margin: 0 3rem 0 2rem;
+      width: 5rem;
+      animation: headerImg .5s;
+    }
+  }
+  &_content {
+    display: flex;
+    flex-direction: column;
+    &--start{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      animation: headerImg .5s;
+    }
+  }
+  &_name {
+    font-size: 2.5rem;
+    width: 15vw;
+    &--start{
+      font-size: 2rem;
+      line-height: 2.5rem;
+      margin-right: 2rem;
+      width: 100vw;
+      animation: headerName .5s;
+    }
+  }
+  &_short-description {
+    font-size: 1.75rem;
+    &--start{
+      font-size: 1.25rem;
+      line-height: 2.5rem;
+      width: 50vw;
+      animation: headerShortDescription .5s;
+    }
+  }
+}
+
+/*=============================
+=>           NavBar          <=
+=============================*/
+.navbar {
+  &_main {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 1.75rem;
+    position: relative;
+  }
+  &_main::before {
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top:0;
+    width: 100%;
+    z-index: -1;
+    @include glass($color-primario-1);
+  }
+  &_list {
+    list-style-type: none;
+    &-item{
+      font-size: 3rem;
+      transition: all 0.2s;
+      &:not(:first-child) {
+        margin-top: 4rem;
+      }
+      &:last-child {
+        margin-bottom: 4rem;
+      }
+      &:hover{
+        transform:
+          scale(1.05)
+          translateY(-.25rem);
+        color: $color-complementario-2;
+      }
+    }
+  }
+}

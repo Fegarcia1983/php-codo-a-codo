@@ -1,2 +1,11 @@
-@import '_variables';
-@import '_layout';
+@import './variables';
+@import './mixins';
+@import './base';
+@import './grids';
+@import './layouts';
+@import './components';
+@import './keyframes';
+
+main {
+  height: 100vh;
+}
