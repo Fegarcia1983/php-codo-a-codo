@@ -29,7 +29,7 @@ window.onload = () => {
     canvas.setAttribute('height', style_height * dpi);
     canvas.setAttribute('width', style_width * dpi);
   }
-  var particle_count = 70,
+  var particle_count = 40,
   particles = [],
   couleurs   = ["#C2DED1", "#ECE5C7", "#CDC2AE","#354259"];
   function Particle(){
